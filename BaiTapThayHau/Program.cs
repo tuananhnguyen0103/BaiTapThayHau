@@ -8,6 +8,50 @@ namespace BaiTapThayHau
 {
     class Program
     {
+        static void Eratosthenes()
+        {
+            Console.WriteLine("Tìm số nguyên tố sử dụng thuật toán Sàng Eratosthenes");
+            int n;
+            Console.Write("Nhập vào các số số nguyên tố cần tìm nhỏ hơn:");
+            n = int.Parse(Console.ReadLine());
+            bool[] a = new bool[n + 1];
+            //Khởi tạo mảng khởi tạo ban đầu đều là số nguyên tố
+            for (int i = 2; i <= n; i++)
+                a[i] = true;
+            //Tìm số nguyên tố
+            for (int i = 2; i < Math.Sqrt(n); i++)
+            {
+                if (a[i])
+                {
+                    int j = i*i;
+                    while (j <= n)
+                    {
+                        a[j] = false;
+                        j += i;
+                    }
+                }
+            }
+            Console.WriteLine("Các số nguyên tố là:");
+            for (int i = 2; i <= n; i++)
+                if (a[i])
+                    Console.Write("{0}, ", i);
+        }
+        static void EculidAlgo()
+        {
+            Random rd = new Random();
+            int A = rd.Next(0, 100);
+            int B = rd.Next(0, 100);
+            Console.WriteLine(A);
+            Console.WriteLine(B);
+            int C;
+            do
+            {
+                C = B % A;
+                B = A;
+                A = C;
+            } while (A!=0);
+            Console.WriteLine(B);
+        }
         static int FindMin1(int [] A1)
         {
             int resultMin1 = A1[0];
@@ -50,6 +94,7 @@ namespace BaiTapThayHau
                 }
             return resultMax2;
         }
+        
         static void Bai1()
         {
             string check;
@@ -510,7 +555,10 @@ namespace BaiTapThayHau
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Choose();
+            //Choose();
+            //EculidAlgo();
+            Eratosthenes();
+            Console.ReadLine();
         }
     }
 }
