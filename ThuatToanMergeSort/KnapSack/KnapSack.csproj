@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A867DB29-27A2-49BF-B892-7EA314EB79AD}</ProjectGuid>
+    <ProjectGuid>{4ACDA491-A3C9-4B3F-9637-85182E601B9E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BinarySearchAlogorithm</RootNamespace>
-    <AssemblyName>BinarySearchAlogorithm</AssemblyName>
+    <RootNamespace>KnapSack</RootNamespace>
+    <AssemblyName>KnapSack</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

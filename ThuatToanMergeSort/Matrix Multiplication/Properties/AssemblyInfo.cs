@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BinarySearchAlogorithm")]
+[assembly: AssemblyTitle("Matrix Multiplication")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("BinarySearchAlogorithm")]
+[assembly: AssemblyProduct("Matrix Multiplication")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a867db29-27a2-49bf-b892-7ea314eb79ad")]
+[assembly: Guid("d82f3b79-2655-4fd6-af24-2eeec273adc2")]
 
 // Version information for an assembly consists of the following four values:
 //
